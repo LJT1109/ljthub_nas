@@ -14,6 +14,18 @@ git clone https://github.com/ljthub/ljthub_nas.git
 cd ljthub_nas
 ```
 
+```bash
+#Set up ssh key
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+#mac/linux
+ssh-copy-id user@server_ip
+#windows
+type $env:USERPROFILE\.ssh\id_rsa.pub | ssh user@server_ip "cat >> .ssh/authorized_keys"
+
+```
+
+
+
 host setup
 ----------
  
